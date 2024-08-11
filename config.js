@@ -6,4 +6,6 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID,
+ALIVE_IMG: process.eve.ALIVE_IMG || "https://telegra.ph/file/d0fdb53f9f22eefd486cb.jpg",
+ALIVE_MSG: process.eve.ALIVE_MSG || "Hello, I am MAXBOT-MD, I am alive now!",
 };
