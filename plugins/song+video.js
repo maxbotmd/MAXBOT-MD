@@ -17,7 +17,7 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
-✨️ *AXBOT-MD SONG DOWNLOADER* ✨️
+✨️ *MAXBOT-MD SONG DOWNLOADER* ✨️
 
 title: ${data.title}
 description: ${data.description}
@@ -27,7 +27,16 @@ views: ${data.views}
 
 MADE BY AUSTIN MAX 💖
 `
-await
+await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
+
+//download audio 
+
+let down = await fg.yta(url)
+let downloadurl = down.dl_url
+
+//send audio message
+await conn.sendMessage(from,{audio: {
+
 }catch(e){
   console.log(e)
   reply(`${e}`)
