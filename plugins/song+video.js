@@ -32,7 +32,7 @@ await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:me
 //download audio 
 
 let down = await fg.yta(url)
-let downloadurl = down.dl_url
+let downloadUrl = down.dl_url
 
 //send audio + document message
 await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
@@ -76,7 +76,7 @@ await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:me
 //download video
 
 let down = await fg.ytv(url)
-let downloadurl = down.dl_url
+let downloadUrl = down.dl_url
 
 //send video + document message
 await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
