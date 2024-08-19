@@ -19,13 +19,13 @@ const url = data.url
 let desc = `
 ✨️ *MAXBOT-MD SONG DOWNLOADER* ✨️
 
-title: ${data.title}
-description: ${data.description}
-time: ${data.timestamp}
-ago: ${data.ago}
-views: ${data.views}
+*🎶Title:* ${data.title}
+*📝Description:* ${data.description}
+*🕑Duration:* ${data.timestamp}
+*📅Posted:* ${data.ago}
+*👁Views:* ${data.views}
 
-MADE BY AUSTIN MAX 💖
+*MADE BY AUSTIN MAX 💖*
 `
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
 
@@ -36,7 +36,7 @@ let downloadUrl = down.dl_url
 
 //send audio + document message
 await conn.sendMessage(from,{audio: {url:downloadUrl},mimetype:"audio/mpeg"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"MADE BY AUSTIN MAX 💖"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"*MADE BY AUSTIN MAX 💖*"},{quoted:mek})
 
 }catch(e){
 console.log(e)
