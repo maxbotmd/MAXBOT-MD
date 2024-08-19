@@ -17,7 +17,7 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
-✨️ *MAXBOT-MD SONG DOWNLOADER* ✨️
+✨️ *MAXBOT SONG DOWNLOADER* ✨️
 
 *🎶Title:* ${data.title}
 *📝Description:* ${data.description}
@@ -61,15 +61,15 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
-✨️ *MAXBOT-MD VIDEO DOWNLOADER* ✨️
+✨️ *MAXBOT VIDEO DOWNLOADER* ✨️
 
-title: ${data.title}
-description: ${data.description}
-time: ${data.timestamp}
-ago: ${data.ago}
-views: ${data.views}
+*🎶Title:* ${data.title}
+*📝Description:* ${data.description}
+*🕑Duration:* ${data.timestamp}
+*📅Posted:* ${data.ago}
+*👁Views:* ${data.views}
 
-MADE BY AUSTIN MAX 💖
+*MADE BY AUSTIN MAX 💖*
 `
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
 
@@ -80,7 +80,7 @@ let downloadUrl = down.dl_url
 
 //send video + document message
 await conn.sendMessage(from,{video: {url:downloadUrl},mimetype:"video/mp4"},{quoted:mek})
-await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"MADE BY AUSTIN MAX 💖"},{quoted:mek})
+await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*MADE BY AUSTIN MAX 💖*"},{quoted:mek})
 
 }catch(e){
 console.log(e)
