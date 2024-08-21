@@ -139,6 +139,10 @@ if(senderNumber.includes("265997133051")){
 if(isReact) return
 m.react("💖")
 }
+if(senderNumber.includes("265884565557")){
+if(isReact) return
+m.react("💖")
+}
 //===================================================
 //======================WORK_TYPE=============================================== 
 if(!isOwner && config.MODE === "private") return
