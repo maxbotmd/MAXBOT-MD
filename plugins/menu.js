@@ -36,7 +36,7 @@ ${menu.main}
 
 > *GROUP COMMANDS* 🚻
 
-${menu.groups}
+${menu.group}
 
 > *OWNER COMMANDS* 💝
 
