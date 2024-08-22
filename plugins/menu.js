@@ -49,7 +49,8 @@ ${menu.convert}
 
 ${menu.search}
 
-POWERED BY AUSTIN MAX 💝
+*POWERED BY AUSTIN MAX 💝*
+https://wa.me/265997133051
 `
 await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/d0fdb53f9f22eefd486cb.jpg"},caption:madeMenu},{quoted:mek})
 
