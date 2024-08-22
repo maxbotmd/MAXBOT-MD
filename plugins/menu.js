@@ -51,7 +51,7 @@ ${menu.search}
 
 POWERED BY AUSTIN MAX 💝
 `
-await conn.sendMessage(from,{text:madeMenu},{quoted:mek})
+await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/d0fdb53f9f22eefd486cb.jpg"},caption:madeMenu},{quoted:mek})
 
 
 
