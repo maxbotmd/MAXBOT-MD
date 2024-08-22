@@ -9,14 +9,14 @@
     "restart": "pm2 restart MAXBOT-MD"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "6.6.0",
+    "@whiskeysockets/baileys": "6.7.6",
     "@adiwajshing/keyed-db": "^0.2.4",
     "pino": "^7.0.5",
     "pm2": "^5.2.0",
     "util": "^0.12.4",
     "express": "latest",
     "axios": "^1.2.5",
-    "file_size_url": "^1.0.4",
+    "file_size_url": "^1.0.6",
     "fs-extra": "^11.1.0",
     "path": "^0.12.7",
     "node-fetch": "^2.6.1",
