@@ -35,8 +35,13 @@ let down = await fg.yta(url)
 let downloadUrl = down.dl_url
 
 //send audio + document message
+await react("⬇️");
+    try {
+        switch (input) {
+            case '1':
+                await react("⬆️");
 await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + ".mp3",caption:"*MADE BY AUSTIN MAX 💖*"},{quoted:mek})
-
+await react("🎶");
 }catch(e){
 console.log(e)
 reply(`${e}`)
