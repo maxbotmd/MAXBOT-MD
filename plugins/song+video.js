@@ -18,15 +18,14 @@ const url = data.url
 
 let desc = `
 ✨️ *MAXBOT SONG DOWNLOADER* ✨️
-
+=====================================
 > *🎶TITLE:*  ${data.title}
-> *📝AUTHOR:*  ${data.artist}
 > *🕑DURATION:*  ${data.timestamp}
 > *📅POSTED:*  ${data.ago}
 > *👁️‍🗨️VIEWS:*  ${data.views}
 > *🖇URL:*  ${data.url}
-> *DESCRIPTION:*  ${data.description}
-
+> *📝DESCRIPTION:*  ${data.description}
+=======================================
 *MADE BY AUSTIN MAX 💖*
 `
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
