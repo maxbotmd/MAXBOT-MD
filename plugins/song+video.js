@@ -19,12 +19,12 @@ const url = data.url
 let desc = `
 ✨️ *MAXBOT SONG DOWNLOADER* ✨️
 
-*> 🎶TITLE:* ${data.title}
-*> 📝DESCRIPTION:* ${data.description}
-*> 🕑DURATION:* ${data.timestamp}
-*> 📅POSTED:* ${data.ago}
-*> 👁️‍🗨️VIEWS:* ${data.views}
-*> 🖇URL:* ${data.url}
+> *🎶TITLE:*  ${data.title}
+> *📝DESCRIPTION:*  ${data.description}
+> *🕑DURATION:*  ${data.timestamp}
+> *📅POSTED:*  ${data.ago}
+> *👁️‍🗨️VIEWS:*  ${data.views}
+> *🖇URL:*  ${data.url}
 
 *MADE BY AUSTIN MAX 💖*
 `
