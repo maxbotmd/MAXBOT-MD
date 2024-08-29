@@ -20,11 +20,12 @@ let desc = `
 ✨️ *MAXBOT SONG DOWNLOADER* ✨️
 
 > *🎶TITLE:*  ${data.title}
-> *📝DESCRIPTION:*  ${data.description}
+> *📝AUTHOR:*  ${data.author}
 > *🕑DURATION:*  ${data.timestamp}
 > *📅POSTED:*  ${data.ago}
 > *👁️‍🗨️VIEWS:*  ${data.views}
 > *🖇URL:*  ${data.url}
+> *LYRICS:*  ${data.lyrics}
 
 *MADE BY AUSTIN MAX 💖*
 `
