@@ -16,18 +16,18 @@ const search = await yts(q)
 const data = search.videos[0];
 const url = data.url
 
-let desc = `
+let desc = '
 ✨️ *MAXBOT SONG DOWNLOADER* ✨️
 =========================
-> *🎶TITLE:*  ${data.title}
-> *🕑DURATION:*  ${data.timestamp}
-> *📅POSTED:*  ${data.ago}
-> *👁️‍🗨️VIEWS:*  ${data.views}
-> *🖇URL:*  ${data.url}
-> *📝DESCRIPTION:*  ${data.description}
+> `*🎶TITLE:*`  ${data.title}
+> `*🕑DURATION:*`  ${data.timestamp}
+> `*📅POSTED:*`  ${data.ago}
+> `*👁️‍🗨️VIEWS:*`  ${data.views}
+> `*🖇URL:*`  ${data.url}
+> `*📝DESCRIPTION:*`  ${data.description}
 ==========================
 *MADE BY AUSTIN MAX 💖*
-`
+'
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
 
 //download audio 
