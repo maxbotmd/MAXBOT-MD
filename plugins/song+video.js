@@ -16,19 +16,18 @@ const search = await yts(q)
 const data = search.videos[0];
 const url = data.url
 
-let desc = `("
-✨️ *MAXBOT SONG DOWNLOADER* ✨️
+let desc = `
+🎶 *MAXBOT SONG DOWNLOADER* 🎶
 ┌───────────────────
-├ *ℹ️ `TITLE:`* ${data.title}
-├ *👁️‍🗨️ `VIEWS:`* ${data.views}
-├ *🕘 `DURATION:`* ${data.timestamp}
-├ *📌 `POSTED:`* ${data.ago}
-├ *🔗 `URL:`* ${data.url}
-├ *👤 `DESCRIPTION:`* ${data.description}
+├ *ℹ️ TITLE:* ${data.title}
+├ *👁️‍🗨️ VIEWS:* ${data.views}
+├ *🕘 DURATION:* ${data.timestamp}
+├ *📌 POSTED:* ${data.ago}
+├ *🔗 URL:* ${data.url}
+├ *📝 DESCRIPTION:* ${data.description}
 └───────────────────
-
 *MADE BY AUSTIN MAX 💖*
-")`
+`
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
 
 //download audio 
@@ -60,14 +59,15 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
-✨️ *MAXBOT VIDEO DOWNLOADER* ✨️
-
-*🎶Title:* ${data.title}
-*📝Description:* ${data.description}
-*🕑Duration:* ${data.timestamp}
-*📅Posted:* ${data.ago}
-*👁Views:* ${data.views}
-
+📽 *MAXBOT VIDEO DOWNLOADER* 📽
+┌───────────────────
+├ *ℹ️ TITLE:* ${data.title}
+├ *👁️‍🗨️ VIEWS:* ${data.views}
+├ *🕘 DURATION:* ${data.timestamp}
+├ *📌 POSTED:* ${data.ago}
+├ *🔗 URL:* ${data.url}
+├ *📝 DESCRIPTION:* ${data.description}
+└───────────────────
 *MADE BY AUSTIN MAX 💖*
 `
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
