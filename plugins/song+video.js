@@ -16,7 +16,7 @@ const search = await yts(q)
 const data = search.videos[0];
 const url = data.url
 
-let desc = "
+let desc = `("
 ✨️ *MAXBOT SONG DOWNLOADER* ✨️
 ┌───────────────────
 ├ *ℹ️ `TITLE:`* ${data.title}
@@ -28,7 +28,7 @@ let desc = "
 └───────────────────
 
 *MADE BY AUSTIN MAX 💖*
-"
+")`
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
 
 //download audio 
