@@ -20,7 +20,6 @@ let desc = `
 🎶 *MAXBOT SONG DOWNLOADER* 🎶
 ┌───────────────────
 ├ *ℹ️ TITLE:* - ${data.title}
-├ *👤 Author:* - ${data.composer}
 ├ *👁️‍🗨️ VIEWS:* - ${data.views}
 ├ *🕘 DURATION:* - ${data.timestamp}
 ├ *📌 POSTED:* - ${data.ago}
