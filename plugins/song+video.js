@@ -7,6 +7,7 @@ cmd({
     pattern: "song",
     desc: "download songs",
     category: "download",
+    react: "🎶",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -17,13 +18,15 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
-✨️ *MAXBOT SONG DOWNLOADER* ✨️
-
-*🎶Title:* ${data.title}
-*📝Description:* ${data.description}
-*🕑Duration:* ${data.timestamp}
-*📅Posted:* ${data.ago}
-*👁Views:* ${data.views}
+🎶 *MAXBOT SONG DOWNLOADER* 🎶
+┌───────────────────
+├ *ℹ️ TITLE:* - ${data.title}
+├ *🕘 DURATION:* - ${data.timestamp}
+├ *📌 POSTED:* - ${data.ago}
+├ *👁️‍🗨️ VIEWS:* - ${data.views}
+├ *🔗 URL:* - ${data.url}
+├ *📝 DESCRIPTION:* - ${data.description}
+└───────────────────
 
 *MADE BY AUSTIN MAX 💖*
 `
@@ -50,6 +53,7 @@ cmd({
     pattern: "video",
     desc: "download video",
     category: "download",
+    react: "📽",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -60,14 +64,16 @@ const data = search.videos[0];
 const url = data.url
 
 let desc = `
-✨️ *MAXBOT VIDEO DOWNLOADER* ✨️
+📽 *MAXBOT VIDEO DOWNLOADER* 📽
 
-*🎶Title:* ${data.title}
-*📝Description:* ${data.description}
-*🕑Duration:* ${data.timestamp}
-*📅Posted:* ${data.ago}
-*👁Views:* ${data.views}
-
+┌───────────────────
+├ *ℹ️ TITLE:* - ${data.title}
+├ *🕘 DURATION:* - ${data.timestamp}
+├ *📌 POSTED:* - ${data.ago}
+├ *👁️‍🗨️ VIEWS:* - ${data.views}
+├ *🔗 URL:* - ${data.url}
+├ *📝 DESCRIPTION:* - ${data.description}
+└───────────────────
 *MADE BY AUSTIN MAX 💖*
 `
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
