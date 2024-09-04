@@ -1,4 +1,4 @@
-const {readEnv} = require('../lib/database')
+const config = require('../config')
 const {cmd , commands} = require('../command')
 
 cmd({
@@ -9,12 +9,7 @@ cmd({
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-const config  = await readEnv();
-let desc = ` Welcome to MAXBOT-MD 
-
-
-`
-return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption:desc},{quoted: mek})
+return await conn.sendMessage(from,{image: {url: config.ALIVE_IMG},caption: config.ALIVE_MSG},{quoted: mek})
 }catch(e){
 console.log(e)
 reply(`${e}`)
