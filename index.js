@@ -77,19 +77,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('MAXBOT-MD connected to whatsapp ✅')
 
-let up = `MAXBOT-MD connected successfully 
-This Bot was created By Austin Max
-and its not for sale, if you have been sold please
-report to us.
+let up = `MAXBOT-MD connected successful ✅\n\nPREFIX: ${prefix}`;
 
-
-follow as for more on 265997133051
-
-WITH LOVE BY AUSTIN MAX 
-
-`;
-
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/d0fdb53f9f22eefd486cb.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/da27a7c5f3ce5bb64f645.jpg` }, caption: up })
 
 }
 })
