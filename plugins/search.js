@@ -47,11 +47,11 @@ cmd({
                         citel.reply(textw)
                     });
 
-            } catch (e) {
-                console.log(e)
-            }
-        }
-    )
+            }catch(e){
+console.log(e)
+reply(`${e}`)
+}
+})
     //---------------------------------------------------------------------------
     cmd({
         pattern: "google",
