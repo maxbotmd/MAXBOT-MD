@@ -74,6 +74,7 @@ let desc = `
 ├ *🔗 URL:* - ${data.url}
 ├ *📝 DESCRIPTION:* - ${data.description}
 └───────────────────
+
 *MADE BY AUSTIN MAX 💖*
 `
 await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:mek});
