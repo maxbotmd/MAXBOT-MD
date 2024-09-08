@@ -15,9 +15,9 @@ let baseUrl;
 
 //fb downloader
 cmd({
-    pattern: "movie",
-    alias: ["movie"],
-    desc: "download movies",
+    pattern: "spotify",
+    alias: ["spotify"],
+    desc: "download spotify songs",
     category: "download",
     filename: __filename
 },
@@ -25,10 +25,10 @@ async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, send
     try {
         if (!q && !q.startsWith("https://")) return reply("give me movie url")
         //fetch data from api  
-        let data = await fetchJson(`${baseUrl}/api/moviedl?url=${q}`)
+        let data = await fetchJson(`${baseUrl}/api/spotifydl?url=${q}`)
         reply("*Downloading...*")
         //send video (hd,sd)
-        await conn.sendMessage(from, { video: { url: data.data.hd }, mimetype: "video/mp4", caption: `- QUALITY HD\n\n> ${cap}` }, { quoted: mek })
+        await conn.sendMessage(from, { audio: { url: data.data.data.audio }, mimetype: "audio/mpeg" }, { quoted: mek })  
     } catch (e) {
         console.log(e)
         reply(`${e}`)
