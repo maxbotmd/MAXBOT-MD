@@ -6,7 +6,7 @@ cmd({
     pattern: "ai",
     alias: ["gpt","max"],
     desc: "ai chat",
-    category: "main",
+    category: "search",
     react: "🧠",
     filename: __filename
 },
