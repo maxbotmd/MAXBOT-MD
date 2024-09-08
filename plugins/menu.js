@@ -17,6 +17,7 @@ group: '',
 owner: '',
 convert: '',
 search: '',
+fun: '',
 };
 
 for (let i = 0; i < commands.length; i++) {
@@ -50,6 +51,10 @@ ${menu.convert}
 > *SEARCH COMMANDS* 🔍
 
 ${menu.search}
+
+> *FUN COMMANDS* 😂
+
+${menu.fun}
 
 *POWERED BY AUSTIN MAX 💝*
 https://wa.me/265997133051
