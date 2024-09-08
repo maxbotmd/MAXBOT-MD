@@ -5,10 +5,10 @@ const { cmd, commands } = require('../command');
 cmd({
     pattern: "convert",
     desc: "Convert an amount from one currency to another.",
-    category: "convert",
+    category: "main",
     react: "💱",
     filename: __filename
-},
+},   
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         if (args.length < 3) {
