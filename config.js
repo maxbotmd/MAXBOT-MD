@@ -9,3 +9,4 @@ SESSION_ID: process.env.SESSION_ID || "iVMxALKb#Jx_yARt6VJBGTiOQRSwjKjfPTTrsTdgt
 MONGODB: process.env.MONGODB || "mongodb+srv://maxaustin37:Chiputula.123@cluster0.rk3qd.mongodb.net/",
 
 }; 
+
