@@ -18,6 +18,7 @@ owner: '',
 convert: '',
 search: '',
 fun: '',
+other: '',
 };
 
 for (let i = 0; i < commands.length; i++) {
@@ -56,6 +57,10 @@ ${menu.search}
 
 ${menu.fun}
 
+> *OTHER COMMANDS* 💻
+
+${menu.other}
+
 *POWERED BY AUSTIN MAX 💝*
 https://wa.me/265997133051
 `
@@ -67,4 +72,5 @@ console.log(e)
 reply(`${e}`)
 }
 })
+
 
