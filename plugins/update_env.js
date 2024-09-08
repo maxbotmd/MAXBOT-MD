@@ -1,7 +1,7 @@
 const { updateEnv, readEnv } = require('../lib/database');
 const EnvVar = require('../lib/mongodbenv');
 const { cmd } = require('../command');
-
+ 
 cmd({
     pattern: "update",
     alias: ["updateenv"],
