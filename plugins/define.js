@@ -39,3 +39,4 @@ const wordInfo = `
                                  return reply("⚠️ An error occurred while fetching the definition. Please try again later.");
                              }
                          });
+
