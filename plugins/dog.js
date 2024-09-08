@@ -4,7 +4,7 @@ const { cmd, commands } = require('../command');
 cmd({
     pattern: "dog",
     desc: "Fetch a random dog image.",
-    category: "fun",
+    category: "search",
     react: "🐶",
     filename: __filename
 },
