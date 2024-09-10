@@ -13,11 +13,8 @@ cmd({
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-  if (!q[0]) {
-    reply(`how to use this command:\n ${prefix}tiktok tiktok_video_link`);
-    return;
-  }
-
+  if (!q) return reply("please give me url")
+  
   const videoUrl = arg.join(" ");
 
  let data = await axios.get('https://vihangayt.me/download/tiktok?url='+ videoUrl) ;
