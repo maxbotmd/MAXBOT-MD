@@ -1,17 +1,20 @@
+
 const config = require('../config')
 const {cmd , commands} = require('../command')
+const { default: axios } = require('axios');
 const fs = require('fs');
+
 cmd({
     pattern: "tiktok",
     desc: "Download tiktok vid",
     category: "download",
     filename: __filename
 },
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, arg, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
 
-  if (!arg[0]) {
-    repondre(`how to use this command:\n ${prefix}tiktok tiktok_video_link`);
+  if (!q[0]) {
+    reply(`how to use this command:\n ${prefix}tiktok tiktok_video_link`);
     return;
   }
 
@@ -28,7 +31,7 @@ Description: ${tik.desc}
       `;
 
          
-      zk.sendMessage(dest, { video: { url: tik.links[0].a} , caption : caption },{quoted : ms});    
+ await conn.sendMessage(dest, { video: { url: tik.links[0].a} , caption : caption },{quoted : mek});    
 
 }catch(e){
 console.log(e)
