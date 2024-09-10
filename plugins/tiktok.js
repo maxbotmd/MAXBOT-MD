@@ -15,7 +15,7 @@ try{
 
   if (!q) return reply("please give me url")
   
-  const videoUrl = arg.join(" ");
+  const videoUrl = q.join(" ");
 
  let data = await axios.get('https://vihangayt.me/download/tiktok?url='+ videoUrl) ;
 
