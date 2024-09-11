@@ -1,22 +1,5 @@
 const config = require('../config')
 const {cmd , commands} = require('../command')
-
-cmd({
-    pattern: "gemini",
-    desc: "ask any question.",
-    category: "search",
-    react: "🧠",
-    filename: __filename
-},
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-
-let _0x132e0f=await fetchJson(_0x3cda44(0x107)+_0xbbce2c),_0x5298fc=_0x132e0f[_0x3cda44(0xb5)];await _0x57aa40(_0x5298fc[_0x3cda44(0xa2)]);
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
-}
-})
-
+cmd({'pattern':'gemini','desc':_0x2672c9(0xe6),'react':'🧠','category':_0x2672c9(0x115),'filename':__filename},async(_0x91fe36,_0x51fb0a,_0x3764b3,{from:_0x307ced,quoted:_0x14716a,body:_0x28388f,isCmd:_0x1b21f6,command:_0x4e5cf4,args:_0x5ef599,q:_0xbbce2c,isGroup:_0x55becd,sender:_0x491bae,senderNumber:_0x1f3ae2,botNumber2:_0x301f19,botNumber:_0x259d60,pushname:_0x442e6b,isMe:_0x4a1b8b,isOwner:_0x119f4c,groupMetadata:_0x674cda,groupName:_0x279ef8,participants:_0x14cd4c,groupAdmins:_0x4606e4,isBotAdmins:_0x2536fd,isAdmins:_0x2f72bf,reply:_0x57aa40})=>{const _0x3cda44=_0x2672c9;try{let _0x132e0f=await fetchJson(_0x3cda44(0x107)+_0xbbce2c),_0x5298fc=_0x132e0f[_0x3cda44(0xb5)];await _0x57aa40(_0x5298fc[_0x3cda44(0xa2)]);}catch(_0x10b00d){console['log'](_0x10b00d),_0x57aa40(''+_0x10b00d);}}),
 
 
