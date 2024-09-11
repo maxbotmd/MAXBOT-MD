@@ -17,7 +17,7 @@ try{
   
   
 
- let data = await axios.get('https://vihangayt.me/download/tiktok?url='+ videoUrl) ;
+ let data = await axios.get('https://vihangayt.me/download/tiktok?url=') ;
 
   let tik = data.data.data
 
