@@ -81,7 +81,7 @@ await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:me
 
 let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
-const result_ = await getResolutions(link)
+
   let list = {
     type: 'single_select',
     head: {
