@@ -81,6 +81,32 @@ await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:me
 
 let down = await fg.ytv(url)
 let downloadUrl = down.dl_url
+const result_ = await getResolutions(link)
+  let list = {
+    type: 'single_select',
+    head: {
+      title: "*Select a resolution*",
+      subtitle:"",
+      footer: `Avaiable resolutions: ${result_.length}`
+    },
+    body : {
+    title:"Select resolution",
+    sections:[
+    {
+    title:"Select a resolution",
+    highlight_label:"Highest",
+    rows:[]
+    }
+    ]
+    }
+  }
+  for (var i of result_){
+    list.body.sections[0].rows.push({
+      title:i.fps60?i.quality+' 60fps':i.quality,
+      description:i.size,
+      id: handler+"ytv dl;"+(i.fps60?i.quality+'60':i.quality)+';'+link
+  })
+    }
 
 //send video + document message
 await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"video/mp4",fileName:data.title + ".mp4",caption:"*MADE BY AUSTIN MAX 💖*"},{quoted:mek})
