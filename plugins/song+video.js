@@ -35,7 +35,6 @@ await conn.sendMessage(from,{image:{url:data.thumbnail},caption:desc},{qouted:me
 
 let down = await fg.yta(url)
 let downloadUrl = down.dl_url
-let data = { videos: { mp4: 'video.mp4' } };
    
 //send audio + document message
 await conn.sendMessage(from,{document: {url:downloadUrl},mimetype:"audio/mpeg",fileName:data.title + "?.mp3",caption:"*MADE BY AUSTIN MAX 💖*"},{quoted:mek})
